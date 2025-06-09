@@ -22,6 +22,7 @@ for nota in notas:
         cant_aprobados+=1
 if cant_aprobados==0:
     print("no hay aprobados")
+    porcentaje = 0
 else :
     porcentaje=cant_aprobados/len(notas)*100
 print("El porcentaje de aprobados es :",porcentaje)
