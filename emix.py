@@ -108,3 +108,24 @@ else :
     print(f"La letra {letra} no forma parte de la palabra {palabra}")
 
 """
+import random
+numero= random.randint (0,100)
+bandera = False
+
+i=0
+
+while bandera!=True and i<10:
+    print("Este es el intento n°:",i+1)
+    num=int(input("Ingrese un numero del 1 al 100 : "))
+    print("verificando si adivinaste")
+    if num==numero:
+        print("Felicitaciones Adivinaste ")
+        bandera=True
+    else :
+        if num > numero:
+            print("El numero que ingresaste es mas grande que el numero a adivinar")
+        else:
+            print("El numero que ingresaste es mas chico que el numero a adivinar")
+            i+=1
+if bandera ==False:
+    print("SE terminaron los intnes perdiste ")
